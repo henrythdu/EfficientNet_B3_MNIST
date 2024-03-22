@@ -131,7 +131,7 @@ def save_model(model: torch.nn.Module,
     Example usage:
     save_model(model=model_0,
               target_dir="models",
-              model_name="05_going_modular_tingvgg_model.pth")
+              model_name="efficientnetb3_model.pth")
     """
     # Create target directory
     target_dir_path = Path(target_dir)

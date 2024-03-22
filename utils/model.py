@@ -9,7 +9,7 @@ def create_effnetb3_model(num_classes:int=10,
 
     Args:
         num_classes (int, optional): number of classes in the classifier head. 
-            Defaults to 42.
+            Defaults to 10.
         seed (int, optional): random seed value. Defaults to 42.
 
     Returns:
@@ -29,8 +29,7 @@ def create_effnetb3_model(num_classes:int=10,
     torch.manual_seed(seed)
     model.classifier = nn.Sequential(
     nn.Dropout(p=0.3, inplace = True),
-    nn.Linear(in_features=1536, out_features= 10, bias = True)
+    nn.Linear(in_features=1536, out_features= num_classes, bias = True)
 )
-
     
     return model, transforms
