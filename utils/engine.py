@@ -199,15 +199,15 @@ def train(model: torch.nn.Module,
           device=device)
 
         # Print out what's happening
-        print(
-          f"Epoch: {epoch+1} | "
-          f"train_loss: {train_loss:.4f} | "
-          f"train_acc: {train_acc.cpu().numpy()} | "
-          f"train_acc_top5: {train_acc_top5.cpu().numpy()} |"
-          f"test_loss: {test_loss:.4f} | "
-          f"test_acc: {test_acc.cpu().numpy()} | "
-          f"test_acc_top5: {test_acc_top5.cpu().numpy()}"
-        )
+    print(
+        f"Epoch: {epoch+1} | "
+        f"train_loss: {train_loss:.4f} | "
+        f"train_acc: {train_acc.cpu().numpy()} | "
+        f"train_acc_top5: {train_acc_top5.cpu().numpy()} |"
+        f"test_loss: {test_loss:.4f} | "
+        f"test_acc: {test_acc.cpu().numpy()} | "
+        f"test_acc_top5: {test_acc_top5.cpu().numpy()}"
+    )
 
         # Update results dictionary
     results["train_loss"].append(train_loss)
