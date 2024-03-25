@@ -11,16 +11,16 @@ EfficientNetB3 is part of the EfficientNet family, which represents a scaling me
 
 
 ## Requirements
-```
-torch==2.1.2
-torchvision==0.16.2
-tqdm==4.66.1
-matplotlib==3.7.5
-numpy==1.26.4
-pandas==2.2.0
-sklearn==1.2.2
-torchinfo==1.8.0
-```
+
+- torch==2.1.2
+- torchvision==0.16.2
+- tqdm==4.66.1
+- matplotlib==3.7.5
+- numpy==1.26.4
+- pandas==2.2.0
+- sklearn==1.2.2
+- torchinfo==1.8.0
+
 
 ## Usage
 1. Clone the repository: 
